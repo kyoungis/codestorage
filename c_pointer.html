@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="link.css">
+        <title>codestorages_python_stack</title>
+    </head>
+    <body>
+        <h1> <a id="main" href="main.html">코드저장소</a></h1>
+        <div class="buttons">
+            <button class="ncb"><a class="ncb"href="python.html">python</a></button>
+            <button class="cb"><a class="cb"href="c.html">c</a></button>
+            <button class="ncb"><a class="ncb"href="html.html">html</a></button>
+        </div>
+        <div class="list">
+            <button class="title" onclick="location.href='c.html'">pointer practice<br>: function of finding max and min</button>
+        </div>
+        <div class="code">
+          #include <stdio.h><br>
+<br>
+            void max_min(int a[], int n, int *max, int *min);<br>
+            <br>
+            int main(void) {<br>
+              &nbsp&nbspint num[10] = {0};<br>
+              &nbsp&nbspprintf("Enter 10 numbers: ");<br>
+              &nbsp&nbspfor (int i = 0; i < 10; i++) {<br>
+                &nbsp&nbsp&nbsp&nbspscanf("%d", &num[i]);<br>
+              }<br>
+            <br>
+              &nbsp&nbspint m, n = 0;<br>
+              &nbsp&nbspmax_min(num, 10, &m, &n);<br>
+            <br>
+              &nbsp&nbspprintf("Largest: %d\n", m);<br>
+              &nbsp&nbspprintf("Smallest: %d\n", n);<br>
+            <br>
+              &nbsp&nbspreturn 0;<br>
+            }<br>
+            <br>
+            void max_min(int a[], int n, int *max, int *min) {<br>
+            <br>
+            &nbsp&nbsp*max = a[0];<br>
+            &nbsp&nbsp*min = a[0];<br>
+              <br>
+              &nbsp&nbspint i = 0;<br>
+            <br>
+            &nbsp&nbspwhile (i < n) {<br>
+              &nbsp&nbsp&nbsp&nbspif (a[i] > *max) {<br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*max = a[i];<br>
+                &nbsp&nbsp&nbsp&nbsp}<br>
+                &nbsp&nbsp&nbsp&nbspif (a[i] < *min) {<br>
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*min = a[i];<br>
+                  &nbsp&nbsp&nbsp&nbsp}<br>
+                  &nbsp&nbsp&nbsp&nbspi++;<br>
+                  &nbsp&nbsp}<br>
+            }<br>
+        </div>
+    </body>
+</html>

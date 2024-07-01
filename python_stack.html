@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="link.css">
+        <title>codestorages_python_stack</title>
+    </head>
+    <body>
+        <h1> <a id="main" href="main.html">코드저장소</a></h1>
+        <div class="buttons">
+            <button class="pb"><a class="pb"href="python.html">python</a></button>
+            <button class="npb"><a class="npb"href="c.html">c</a></button>
+            <button class="npb"><a class="npb"href="html.html">html</a></button>
+        </div>
+        <div class="list">
+            <button class="title" onclick="location.href='python.html'">stack<br>: from decimal to binary</button>
+        </div>
+        <div class="code">
+            print("10진수를 입력하세요.")<br>`<br>
+            decimal = int(input())<br>
+            remainder = []<br>
+            quotient= decimal//2<br><br>
+            remainder.append(decimal%2)<br>
+            print("스택 내용 : ", remainder)<br><br>
+            while quotient != 1:<br>
+            &nbsp&nbspif quotient == 0:<br>
+            &nbsp &nbsp&nbsp&nbspbreak<br>
+            &nbsp&nbspremainder.append(quotient%2)<br>
+            &nbsp&nbspquotient//= 2<br><br>
+            &nbsp&nbspif quotient == 1:<br>
+            &nbsp&nbsp&nbsp &nbsp remainder.append(quotient)<br>
+            &nbsp&nbsp print("스택 내용 : ", remainder)<br><br>
+            print("10진수", decimal,"의 2진수는", end = ' ')<br><br>
+            for binary in range(len(remainder)):<br>
+            print(remainder.pop(), end='')<br>
+        </div>
+    </body>
+</html>

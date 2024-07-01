@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="link.css">
+        <title>codestorages_python_tax</title>
+    </head>
+    <body>
+        <h1> <a id="main" href="main.html">코드저장소</a></h1>
+        <div class="buttons">
+            <button class="pb"><a class="pb"href="python.html">python</a></button>
+            <button class="npb"><a class="npb"href="c.html">c</a></button>
+            <button class="npb"><a class="npb"href="html.html">html</a></button>
+        </div>
+        <div class="list">
+            <button class="title" onclick="location.href='python.html'">tax<br>: tax calculator</button>
+        </div>
+        <div class="code">
+            money = int(input("과세 표준 금액 입력(만원 단위): "))<br><br>
+
+            if money <= 1200:<br>
+             &nbsp tax = money * 0.06<br>
+            elif money <= 4600:<br>
+            &nbsptax = 72 + (money - 1200)*0.15<br>
+            elif money <= 8800:<br>
+            &nbsptax = 582 + (money - 4600)*0.24<br>
+            elif money <= 15000:<br>
+            &nbsptax = 1590 + (money - 8800)*0.35<br>
+            elif money <= 30000:<br>
+            &nbsptax = 3760 + (money - 15000)*0.38<br>
+            elif money <= 50000:<br>
+            &nbsp  tax = 9460 + (money - 30000)*0.4<br>
+            elif money <= 100000:<br>
+            &nbsp  tax = 17460 + (money - 50000)*0.42<br>
+            else:<br>
+            &nbsp  tax = 38460 + (money - 100000)*0.45<br><br>
+            
+            tax = int(tax)<br><br>
+            
+            print("근로소득세액 : %d 만원" %tax)<br>
+        </div>
+    </body>
+</html>

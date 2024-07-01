@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="link.css">
+        <title>codestorages_python_stack</title>
+    </head>
+    <body>
+        <h1> <a id="main" href="main.html">코드저장소</a></h1>
+        <div class="buttons">
+            <button class="ncb"><a class="ncb"href="python.html">python</a></button>
+            <button class="cb"><a class="cb"href="c.html">c</a></button>
+            <button class="ncb"><a class="ncb"href="html.html">html</a></button>
+        </div>
+        <div class="list">
+            <button class="title" onclick="location.href='c.html'">if statement practice<br>: tax calculator</button>
+        </div>
+        <div class="code">
+            #include <stdio.h><br>
+                <br>
+                int main(void) {<br>
+                  float money = 8, fee = 3;<br>
+                <br>
+                  printf("거래금액을 입력하세요: $ ");<br>
+                  scanf("%f", &money);<br>
+                <br>
+                  if (money < 2500) {<br>
+                    &nbsp&nbspfee = 30 + money * 0.017;<br>
+                    &nbsp&nbspif(fee < 39) fee = 39;<br>
+                  } else if ((money >= 2500) && (money < 6250)) {<br>
+                    &nbsp&nbspfee = 56 + money * 0.0066;<br>
+                  } else if ((money >= 6250) && (money < 20000)) {<br>
+                    &nbsp&nbspfee = 76 + money * 0.0034;<br>
+                  } else if ((money >= 50000) && (money < 500000)) {<br>
+                    &nbsp&nbspfee = 100 + money * 0.0022;<br>
+                  } else if ((money >= 20000) && (money < 50000)) {<br>
+                    &nbsp&nbspfee = 155 + money * 0.0011;<br>
+                  } else {<br>
+                    &nbsp&nbspfee = 255 + money * 0.0009;<br>
+                  }<br>
+                <br>
+                  printf("수수료는 $ %f 입니다.", fee);<br>
+                  return 0;<br>
+                }<br>
+        </div>
+    </body>
+</html>
